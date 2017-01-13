@@ -116,6 +116,11 @@ export function post<TPermission>(options?: RouteOptions<TPermission>) {
     return route('post', options);
 }
 
+/** @decorator */
+export function del<TPermission>(options?: RouteOptions<TPermission>) {
+    return route('delete', options);
+}
+
 // /** @decorator */
 // export function controller(options: ControllerOptions = {}) {
 //     return (ControllerClass: typeof Controller) => {
